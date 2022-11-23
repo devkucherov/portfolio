@@ -1,5 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
 
 * {
     padding: 0;
@@ -17,7 +16,7 @@
 
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     background: var(--dark);
     color: var(--pure);
 }
