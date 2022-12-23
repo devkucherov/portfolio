@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lora:ital@0;1&display=swap');
 
 * {
     padding: 0;
@@ -10,16 +10,22 @@
     --primary: #34DE82;
     --dark: #232323;
     --pure: #fff;
-    --smoke: whitesmoke;
-    --dark-gray: #999;
+    --gray: #E0E0E0;
 }
 
 
 body {
-    /* font-family: 'Lato', sans-serif; */
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
-    background: var(--dark);
-    color: var(--pure);
+    font-family: 'Inter', sans-serif;
+    color: var(--dark);
+}
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+nav {
+    background: var(--gray);
 }
 
 .container {
@@ -29,14 +35,33 @@ body {
 }
 
 .nav-wrapper {
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.brand {
-    display: flex;
-    align-items: center;
+.logo {
+    font-size: 22px ;
+}
+
+.social-icons {
+    margin-left:30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 750px) { 
+    .social-icons {
+        margin-left: 0;
+    }
+ }
+
+
+.social-icons a svg path:hover {
+    fill: var(--primary);
+    transition: all .5s ease-in-out;
 }
 
 .nav-wrapper ul.nav-list {
@@ -51,7 +76,7 @@ body {
 }
 
 .nav-wrapper ul.nav-list li a {
-    color: var(--pure);
+    color: var(--dark);
     text-decoration: none;
     letter-spacing: 1px;
     transition: all .5s ease-in-out;
@@ -62,20 +87,21 @@ body {
 }
 
 .btn {
-    background: var(--primary);
-    color: var(--pure);
+    background: var(--pure);
+    color: var(--dark);
+    border: 1px solid var(--primary);
     outline: none;
     padding: 8px 20px;
     font-size: 14px;
     cursor: pointer;
     letter-spacing: 1px;
-    border: 1px solid transparent;
     transition: all .5s ease-in-out;
 }
 
 .btn:hover {
-    background: transparent;
-    border-color: var(--pure);
+    background: var(--primary);
+    color: var(--pure);
+    /* border-color: var(--primary); */
 }
 
 main section.header {
@@ -93,33 +119,11 @@ main section.header h1 {
     margin-bottom: 20px;
 }
 
-nav ul.dropdown-list {
-    list-style-type: none;
-    display: block;
-    background: var(--smoke);
-    padding: 6px 16px;
-    position: absolute;
-    width: max-content;
-    z-index: 9999;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    pointer-events: none;
-}
-
-.nav-wrapper ul.dropdown-list li {
-    margin-left: 0;
-    padding: 5px 0;
-}
-
-.nav-wrapper ul.dropdown-list  li a {
-    color: var(--dark);
-} 
-
-.nav-wrapper ul.nav-list li:hover .dropdown-list {
-    opacity: 1;
-    pointer-events: auto;
-    animation: moveUp .5s ease-in-out forwards;
+main section.header h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
 }
 
 @keyframes moveUp {
@@ -145,15 +149,14 @@ nav ul.dropdown-list {
 }
 
 .mobile .hamburger span {
-    background: var(--pure);
+    background: var(--dark);
     width: 28px;
     height: 2px;
     margin-bottom: 8px;
 }
 
 .mobile ul.nav-list {
-    background: -webkit-linear-gradient(45deg, #434343, #000000);
-    background: linear-gradient(45deg, #434343, #000000);
+    background: var(--gray);
     position: fixed;
     left: 0;
     top: 0;
@@ -185,27 +188,9 @@ nav ul.dropdown-list {
     font-size: 20px;
 }
 
-.mobile ul.dropdown-list {
-    position: relative;
-    background: transparent;
-    text-align: center;
-    height: 0;
-    overflow-y: hidden;
-    transition: opacity 1s ease-in-out;
-    padding-top: 0;
-}
-
-.mobile .nav-wrapper ul li:hover .dropdown-list {
-    height: max-content;
-    padding-top: 6px;
-}
-
 .mobile ul.nav-list li {
     margin-left: 0;
     text-align: center;
 }
 
-.mobile .nav-wrapper ul.dropdown-list li a {
-    color: var(--dark-gray);
-}
 

@@ -1,14 +1,14 @@
 
-window.addEventListener('resize', function(){
+window.addEventListener('resize', function () {
     addRequiredClass();
 })
 
 
 function addRequiredClass() {
-    if (window.innerWidth < 860) {
+    if (window.innerWidth < 750) {
         document.body.classList.add('mobile')
     } else {
-        document.body.classList.remove('mobile') 
+        document.body.classList.remove('mobile')
     }
 }
 
@@ -21,9 +21,9 @@ let bars = document.querySelectorAll('.hamburger span')
 
 let isActive = false
 
-hamburger.addEventListener('click', function() {
+hamburger.addEventListener('click', function () {
     mobileNav.classList.toggle('open')
-    if(!isActive) {
+    if (!isActive) {
         bars[0].style.transform = 'rotate(45deg)'
         bars[1].style.opacity = '0'
         bars[2].style.transform = 'rotate(-45deg)'
@@ -34,4 +34,6 @@ hamburger.addEventListener('click', function() {
         bars[2].style.transform = 'rotate(0deg)'
         isActive = false
     }
+
+
 })
