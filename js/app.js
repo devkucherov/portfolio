@@ -35,5 +35,10 @@ hamburger.addEventListener('click', function () {
         isActive = false
     }
 
-
 })
+
+document.body.style.position = 'fixed';
+document.body.style.top = `-${window.scrollY}px`;
+
+document.body.style.position = '';
+document.body.style.top = '';
