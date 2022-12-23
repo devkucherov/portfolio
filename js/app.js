@@ -37,8 +37,8 @@ hamburger.addEventListener('click', function () {
 
 })
 
-document.body.style.position = 'fixed';
-document.body.style.top = `-${window.scrollY}px`;
+let body = document.querySelector('body')
 
-document.body.style.position = '';
-document.body.style.top = '';
+hamburger.addEventListener('click', function () {
+    body.classList.toggle('stopscroll')
+});

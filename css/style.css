@@ -241,3 +241,7 @@ nav {
     font-style: normal;
     font-size: 20px;
 }
+
+.stopscroll {
+    overflow: hidden;
+}
