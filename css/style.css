@@ -35,6 +35,8 @@ em{
 
 nav {
     background: var(--gray);
+   position: sticky;
+   top: 0;
 }
 
 .container {
@@ -48,6 +50,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .logo {
