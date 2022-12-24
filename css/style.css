@@ -35,8 +35,8 @@ em{
 
 nav {
     background: var(--gray);
-   position: sticky;
-   top: 0;
+    position: sticky;
+    top: 0;
 }
 
 .container {
@@ -71,7 +71,7 @@ nav {
  }
 
 
-.social-icons a svg path:hover {
+.social-icons a:hover svg path {
     fill: var(--primary);
     transition: all .5s ease-in-out;
 }
@@ -129,6 +129,15 @@ nav {
 
 .hamburger {
     display: none;
+    outline: none;
+}
+
+.hamburger::-moz-focus-inner {
+    border: 0;
+  }
+
+.stopscroll {
+    overflow: hidden;
 }
 
 .mobile .hamburger {
@@ -242,6 +251,3 @@ nav {
     font-size: 20px;
 }
 
-.stopscroll {
-    overflow: hidden;
-}
