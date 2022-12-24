@@ -14,9 +14,9 @@
     --gray: #E0E0E0;
 }
 
-html {
+/* html {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
-  }
+} */
 
 body {
     font-family: 'Inter', sans-serif;
