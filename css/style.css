@@ -111,9 +111,7 @@ nav {
 
 .hamburger {
     display: none;
-    -webkit-outline: none;
-    -moz-outline: none;
-    outline: none;
+    background: transparent;
 }
 
 
