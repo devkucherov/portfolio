@@ -19,6 +19,8 @@ let mobileNav = document.querySelector('.nav-list')
 
 let bars = document.querySelectorAll('.hamburger span')
 
+let body = document.querySelector('body')
+
 let isActive = false
 
 hamburger.addEventListener('click', function () {
@@ -34,11 +36,6 @@ hamburger.addEventListener('click', function () {
         bars[2].style.transform = 'rotate(0deg)'
         isActive = false
     }
-
+    body.classList.toggle('stopscroll')
 })
 
-let body = document.querySelector('body')
-
-hamburger.addEventListener('click', function () {
-    body.classList.toggle('stopscroll')
-});

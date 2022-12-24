@@ -6,13 +6,13 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
 }
+
 :root {
     --primary: #34DE82;
     --dark: #232323;
     --pure: #fff;
     --gray: #E0E0E0;
 }
-
 
 body {
     font-family: 'Inter', sans-serif;
@@ -70,7 +70,6 @@ nav {
     }
  }
 
-
 .social-icons a:hover svg path {
     fill: var(--primary);
     transition: all .5s ease-in-out;
@@ -81,6 +80,7 @@ nav {
     display: flex;
     align-items: center;
 }
+
 .nav-wrapper ul.nav-list li {
     margin-left: 30px;
     padding: 20px 0;
@@ -98,24 +98,6 @@ nav {
     color: var(--primary);
 }
 
-.btn {
-    background: var(--pure);
-    color: var(--dark);
-    border: 1px solid var(--primary);
-    outline: none;
-    padding: 8px 20px;
-    font-size: 14px;
-    cursor: pointer;
-    letter-spacing: 1px;
-    transition: all .5s ease-in-out;
-}
-
-.btn:hover {
-    background: var(--primary);
-    color: var(--pure);
-    /* border-color: var(--primary); */
-}
-
 @keyframes moveUp {
     0% {
         opacity: 0;
@@ -129,12 +111,8 @@ nav {
 
 .hamburger {
     display: none;
-    outline: none;
 }
 
-.hamburger::-moz-focus-inner {
-    border: 0;
-  }
 
 .stopscroll {
     overflow: hidden;
@@ -213,7 +191,7 @@ nav {
 .experience ul {
     padding-top: 10px;
     font-family: 'Lora', serif;
-    font-style: normal;
+    font-size: 18px;
 }
 
 .experience__seora {
@@ -230,8 +208,12 @@ nav {
 
 .tools p {
     font-family: 'Lora', serif;
-    font-style: normal;
-    font-size: 20px;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.tools__web {
+    padding-top: 10px;
 }
 
 .contact {
