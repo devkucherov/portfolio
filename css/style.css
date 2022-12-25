@@ -167,6 +167,11 @@ nav {
     margin-right: 10px;
 }
 
+.header img {
+    height: 12px;
+    width: 12px;
+}
+
 .experience {
     padding-top: 40px;
 }
