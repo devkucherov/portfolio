@@ -68,7 +68,7 @@ nav {
     gap: 20px;
 }
 
-@media (max-width: 750px) { 
+@media (max-width: 749px) { 
     .social-icons {
         margin-left: 0;
     }
@@ -76,7 +76,7 @@ nav {
 
 .social-icons a:hover svg path {
     fill: var(--primary);
-    transition: all .5s ease-in-out;
+    transition: fill .5s ease-in-out;
 }
 
 .nav-wrapper ul.nav-list {
@@ -91,26 +91,9 @@ nav {
     position: relative;
 }
 
-.nav-wrapper ul.nav-list li a {
-    color: var(--dark);
-    text-decoration: none;
-    letter-spacing: 1px;
-    transition: all .5s ease-in-out;
-}
-
 .nav-wrapper ul.nav-list li a:hover, .nav-wrapper ul.nav-list li.active a {
     color: var(--primary);
-}
-
-@keyframes moveUp {
-    0% {
-        opacity: 0;
-        transform: translateX(-50%) translateY(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(-50%) translateY(20px); 
-    }
+    transition: color .5s ease-in-out;
 }
 
 .hamburger {
@@ -221,15 +204,19 @@ nav {
 }
 
 .contact {
-    padding-top: 40px;
+    padding: 40px 0;
 }
 
 .contact__title {
     margin-bottom: 15px;
 }
 
+.contact ul {
+    list-style-type: none;
+}
+
 .contact a {
-    display: block;
+    display: inline-block;
     margin-bottom: 10px;
     text-decoration: underline;
     font-family: 'Lora', serif;
