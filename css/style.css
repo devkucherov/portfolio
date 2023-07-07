@@ -237,7 +237,7 @@ main {
 
 @media (max-width: 1278px) {
   .wrap {
-    height: 80vh;
+    height: 110vh;
   }
 }
 
@@ -274,7 +274,7 @@ main {
 }
 
 .portfolio .card:hover {
-  height: 400px;
+  height: 350px;
   background: var(--primary);
 }
 
@@ -317,7 +317,7 @@ main {
 
 .portfolio .card:hover .content {
   top: 130px;
-  height: 250px;
+  height: 200px;
 }
 
 .portfolio .card .content h2 {
