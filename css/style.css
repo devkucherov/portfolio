@@ -214,6 +214,12 @@ main {
   text-indent: -6px;
 }
 
+@media (max-width: 588px) {
+  .header__title {
+    font-size: 15vw;
+  }
+}
+
 .header__subtitle {
   text-align: right;
   padding-top: 19px;
@@ -244,6 +250,12 @@ main {
   }
 }
 
+@media (max-width: 810px) {
+  .wrap {
+    height: 100%;
+  }
+}
+
 .portfolio {
   position: relative;
   display: flex;
@@ -259,6 +271,12 @@ main {
   .portfolio {
     justify-content: center;
     gap: 100px 100px;
+  }
+}
+
+@media (max-width: 889px) {
+  .portfolio {
+    gap: 100px 30px;
   }
 }
 
@@ -377,12 +395,12 @@ main {
 
 @media (max-width: 480px) {
   .portfolio .card {
-    width: 230px;
+    width: 350px;
     border-radius: 15px;
   }
 
   .portfolio .card .img-box {
-    width: 185px;
+    width: 300px;
     border-radius: 10px;
   }
 
