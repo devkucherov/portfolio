@@ -232,7 +232,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 550px;
 }
 
 @media (max-width: 1278px) {
