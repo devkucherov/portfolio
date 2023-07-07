@@ -41,9 +41,6 @@ ul {
   list-style-position: inside;
 }
 
-em {
-}
-
 nav {
   background: var(--dark);
   position: sticky;
@@ -258,6 +255,7 @@ main {
   height: 300px;
   /* background: white; */
   border-radius: 20px;
+  border: 3px solid var(--primary);
   transition: 0.5s;
 }
 
