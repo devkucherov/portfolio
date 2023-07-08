@@ -236,12 +236,16 @@ main {
 
 /* portfolio card */
 
+main {
+  height: 100vh;
+  margin-bottom: 80px;
+}
+
 .wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 550px;
-  z-index: 1;
 }
 
 @media (max-width: 1278px) {
@@ -373,6 +377,7 @@ main {
   display: inline-flex;
   align-items: center;
   font-style: italic;
+  font-weight: bold;
 }
 
 .portfolio .card .content .card__look:hover {
@@ -404,6 +409,12 @@ main {
 
 footer {
   background: var(--primary);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  height: 80px;
 }
 
 .footer {
