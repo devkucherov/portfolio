@@ -245,7 +245,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  /* min-height: 80vh; */
 }
 
 /* @media (max-width: 1278px) {
@@ -269,6 +269,7 @@ main {
   gap: 100px 50px;
   padding: 100px 0px;
   z-index: 1;
+  min-height: 80vh;
 }
 
 @media (max-width: 1278px) {
@@ -298,9 +299,9 @@ main {
   transition: 0.5s;
 }
 
-.portfolio .card:hover {
+/* .portfolio .card:hover {
   height: 350px;
-}
+} */
 
 .portfolio .card .img-box {
   position: absolute;
@@ -341,7 +342,7 @@ main {
 
 .portfolio .card:hover .content {
   top: 130px;
-  height: 200px;
+  height: 165px;
 }
 
 .portfolio .card .content h2 {
@@ -360,7 +361,7 @@ main {
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 20px;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .portfolio .card .content .card__github svg {
