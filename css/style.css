@@ -85,7 +85,7 @@ nav {
 
 .social-icons a:hover svg path {
   fill: var(--primary);
-  transition: fill 0.3s ease-in-out;
+  transition: fill 0.25s ease-in-out;
 }
 
 .nav-wrapper ul.nav-list {
@@ -296,7 +296,6 @@ main {
 
 .portfolio .card:hover {
   height: 350px;
-  background: var(--primary);
 }
 
 .portfolio .card .img-box {
@@ -353,44 +352,32 @@ main {
   padding-top: 20px;
 }
 
-.portfolio .card .content a {
-  position: relative;
-  top: 15px;
-  display: inline-block;
-  padding: 12px 25px;
-  text-decoration: none;
-  background: var(--pure);
-  color: white;
-  font-weight: 500;
-}
-
 .portfolio .card .content .content__btn {
   display: grid;
-  grid-template-columns: 1fr 70%;
+  grid-template-columns: 50% 50%;
   gap: 20px;
-}
-
-.portfolio .card .content .card__github {
-  width: 50px;
-  height: 50px;
-  border-radius: 30px;
+  padding-top: 40px;
 }
 
 .portfolio .card .content .card__github svg {
-  fill: var(--dark);
+  fill: var(--pure);
+}
+
+.portfolio .card .content .card__github svg:hover {
+  fill: var(--primary);
+  transition: fill 0.25s ease-in-out;
 }
 
 .portfolio .card .content .card__look {
-  height: 50px;
-  border-radius: 30px;
-  color: var(--black);
+  color: var(--pure);
   display: inline-flex;
-  justify-content: center;
   align-items: center;
+  font-style: italic;
 }
 
-.portfolio .card .content a:hover {
-  opacity: 0.8;
+.portfolio .card .content .card__look:hover {
+  color: var(--primary);
+  transition: color 0.3s ease-in-out;
 }
 
 @media (max-width: 480px) {
