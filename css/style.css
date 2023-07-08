@@ -237,7 +237,7 @@ main {
 /* portfolio card */
 
 main {
-  height: 100vh;
+  /* height: 95vh; */
   margin-bottom: 80px;
 }
 
@@ -245,20 +245,20 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 550px;
+  min-height: 100vh;
 }
 
-@media (max-width: 1278px) {
+/* @media (max-width: 1278px) {
   .wrap {
-    height: 110vh;
+    height: 920px;
   }
 }
 
 @media (max-width: 810px) {
   .wrap {
-    height: 100%;
+    height: 1320px;
   }
-}
+} */
 
 .portfolio {
   position: relative;
@@ -416,6 +416,12 @@ footer {
   z-index: -1;
   height: 80px;
 }
+
+/* @media (max-width: 767px) {
+  footer {
+    position: static;
+  }
+} */
 
 .footer {
   display: flex;
