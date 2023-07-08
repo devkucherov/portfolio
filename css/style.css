@@ -414,7 +414,7 @@ footer {
   left: 0;
   width: 100%;
   z-index: -1;
-  height: 200px;
+  height: 500px;
 }
 
 /* @media (max-width: 767px) {
@@ -428,7 +428,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 120px;
+  padding-top: 420px;
 }
 
 .footer__text {
