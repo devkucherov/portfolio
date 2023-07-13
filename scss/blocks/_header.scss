@@ -1,0 +1,51 @@
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header__menu {
+
+}
+
+.header__btn {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+
+  @include mediaTablet {
+    display: block;
+  }
+}
+
+.header__btn span {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: $white;
+  left: 5px;
+  transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
+}
+
+.header__btn span:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+.header__btn span:nth-child(3) {
+  transform: translateY(10px);
+}
+
+.header__btn.open span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+
+.header__btn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__btn.open span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
