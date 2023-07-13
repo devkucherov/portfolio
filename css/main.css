@@ -141,6 +141,9 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 9;
 }
 
 .header__btn {
@@ -192,6 +195,10 @@ a:hover {
           transform: translateY(0) rotate(-45deg);
 }
 
+.logo {
+  z-index: 9;
+}
+
 .logo__title {
   letter-spacing: -0.03em;
   font-weight: bold;
@@ -227,6 +234,7 @@ a:hover {
     padding: 90px 0;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    background: #222831;
   }
   .menu.open {
     opacity: 1;
