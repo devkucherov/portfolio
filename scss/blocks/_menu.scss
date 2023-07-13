@@ -29,6 +29,12 @@
   }
 }
 
+.menu__link {
+  @include mediaTablet {
+      font-size: 20px;
+  }
+}
+
 .menu__social {
   display: flex;
   gap: 15px;
@@ -41,12 +47,18 @@
   fill: $white;
   & svg {
     height: 100%;
+    @include mediaTablet {
+      width: 42px;
+      height: 42px;
+    }
   }
 
   &:hover svg {
     fill: $accent;
     transition: fill 0.2s ease-in;
   }
+
+  
 }
 
 .menu__icon--telegram {

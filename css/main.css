@@ -251,6 +251,12 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 699px) {
+  .menu__link {
+    font-size: 20px;
+  }
+}
+
 .menu__social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -268,6 +274,12 @@ a:hover {
 }
 .menu__icon svg {
   height: 100%;
+}
+@media screen and (max-width: 699px) {
+  .menu__icon svg {
+    width: 42px;
+    height: 42px;
+  }
 }
 .menu__icon:hover svg {
   fill: #86c232;
