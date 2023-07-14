@@ -352,7 +352,7 @@ a:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 90px;
-  padding: 100px 0px;
+  padding: 90px 0px;
   z-index: 1;
   min-height: 80vh;
 }
