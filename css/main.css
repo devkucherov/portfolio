@@ -124,6 +124,11 @@ a:hover {
   color: #86c232;
 }
 
+.main {
+  background: #222831;
+  margin-bottom: 80px;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -313,6 +318,11 @@ a:hover {
   text-align: center;
 }
 
+.portfolio {
+  position: relative;
+  z-index: 1;
+}
+
 .portfolio__title {
   padding-bottom: 30px;
   font-weight: bold;
@@ -466,7 +476,7 @@ a:hover {
 }
 
 .card__link--look {
-  color: var(--pure);
+  color: #eee;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -475,16 +485,37 @@ a:hover {
           align-items: center;
   font-style: italic;
   font-weight: bold;
-}
-
-.card__link--look:hover {
-  color: #86c232;
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
-
-@media (max-width: 480px) {
-  .card__content a {
+.card__link--look:hover {
+  color: #86c232;
+}
+@media screen and (max-width: 390px) {
+  .card__link--look {
     font-size: 0.9rem;
   }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: -1;
+  background: #86c232;
+}
+
+.footer__text {
+  color: #eee;
 }

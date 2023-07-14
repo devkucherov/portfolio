@@ -102,25 +102,20 @@
 }
 
 .card__link--look {
-  color: var(--pure);
+  color: $white;
   display: inline-flex;
   align-items: center;
   font-style: italic;
   font-weight: bold;
-}
-
-.card__link--look:hover {
-  color: $accent;
   transition: color 0.3s ease-in-out;
-}
 
-@media (max-width: 480px) {
-
-  .card__description {
-    
+  &:hover {
+    color: $accent;
   }
 
-  .card__content a {
+  @include mediaPhone {
     font-size: 0.9rem;
   }
 }
+
+

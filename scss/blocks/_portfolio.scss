@@ -1,5 +1,8 @@
 .portfolio {
+  position: relative;
+  z-index: 1;
 }
+
 .portfolio__title {
   padding-bottom: 30px;
   font-weight: bold;
