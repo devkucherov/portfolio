@@ -3,3 +3,8 @@
     @content;
   }
 }
+@mixin mediaPhone {
+  @media screen and (max-width: $phone) {
+    @content;
+  }
+}
