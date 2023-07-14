@@ -519,3 +519,11 @@ a:hover {
 .footer__text {
   color: #eee;
 }
+
+.footer__link {
+  text-decoration: underline !important;
+}
+.footer__link:hover {
+  color: #eee;
+  text-decoration: none !important;
+}

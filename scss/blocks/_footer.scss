@@ -12,10 +12,14 @@
 }
 
 .footer__text {
-  
   color: $white;
 }
 
 .footer__link {
-  
+  text-decoration: underline !important;
+
+  &:hover {
+    color: $white;
+    text-decoration: none !important;
+  }
 }
