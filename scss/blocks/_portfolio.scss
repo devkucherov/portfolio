@@ -9,6 +9,11 @@
 
   @include mediaTablet {
     font-size: 15vw;
+    text-indent: -7px;
+  }
+
+  @include mediaPhone {
+    text-indent: -7px;
   }
 }
 

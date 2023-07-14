@@ -323,6 +323,12 @@ a:hover {
 @media screen and (max-width: 699px) {
   .portfolio__title {
     font-size: 15vw;
+    text-indent: -7px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .portfolio__title {
+    text-indent: -7px;
   }
 }
 
