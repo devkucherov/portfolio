@@ -10,7 +10,7 @@
 
 Сайт адаптирован под все разрешения экранов
 
-[Ссылка для просмотра](https://devkucherov.github.io/portfolio)
+[Ссылка для просмотра](_blank https://devkucherov.github.io/portfolio)
 
 Дизайн и верстка - Паша Кучеров  
 
